@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C3E751E28FFC6A99724AFB3 /* Pods_examenSiclo_examenSicloUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9711952331AB3FF6BB1D3047 /* Pods_examenSiclo_examenSicloUITests.framework */; };
+		5D829AF1248E9BE799D984A4 /* Pods_examenSiclo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5C54F3583534954942E87AE /* Pods_examenSiclo.framework */; };
+		AA9E252884DCF01FEFC0FD83 /* Pods_examenSicloTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A45031B6447087E01F23BF0C /* Pods_examenSicloTests.framework */; };
 		BD0F4B9A2836C3260092172B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0F4B992836C3260092172B /* AppDelegate.swift */; };
-		BD0F4B9C2836C3260092172B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0F4B9B2836C3260092172B /* SceneDelegate.swift */; };
 		BD0F4B9E2836C3260092172B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0F4B9D2836C3260092172B /* ViewController.swift */; };
 		BD0F4BA12836C3260092172B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD0F4B9F2836C3260092172B /* Main.storyboard */; };
 		BD0F4BA42836C3260092172B /* examenSiclo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BD0F4BA22836C3260092172B /* examenSiclo.xcdatamodeld */; };
@@ -17,6 +19,46 @@
 		BD0F4BB42836C32A0092172B /* examenSicloTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0F4BB32836C32A0092172B /* examenSicloTests.swift */; };
 		BD0F4BBE2836C32A0092172B /* examenSicloUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0F4BBD2836C32A0092172B /* examenSicloUITests.swift */; };
 		BD0F4BC02836C32A0092172B /* examenSicloUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0F4BBF2836C32A0092172B /* examenSicloUITestsLaunchTests.swift */; };
+		BD0F4BD32836C8430092172B /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0F4BCC2836C8420092172B /* MainPresenter.swift */; };
+		BD0F4BD42836C8430092172B /* MainLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0F4BCD2836C8430092172B /* MainLocalDataManager.swift */; };
+		BD0F4BD52836C8430092172B /* MainProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0F4BCE2836C8430092172B /* MainProtocols.swift */; };
+		BD0F4BD62836C8430092172B /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0F4BCF2836C8430092172B /* MainInteractor.swift */; };
+		BD0F4BD72836C8430092172B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0F4BD02836C8430092172B /* MainView.swift */; };
+		BD0F4BD82836C8430092172B /* MainRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0F4BD12836C8430092172B /* MainRemoteDataManager.swift */; };
+		BD0F4BD92836C8430092172B /* MainWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0F4BD22836C8430092172B /* MainWireFrame.swift */; };
+		BD96E71B283834B7004B32EB /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD96E71A283834B7004B32EB /* Extensions.swift */; };
+		BD96E71D2838351F004B32EB /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD96E71C2838351F004B32EB /* Enums.swift */; };
+		BD96E72628384403004B32EB /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD96E71F28384403004B32EB /* LoginPresenter.swift */; };
+		BD96E72728384403004B32EB /* LoginLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD96E72028384403004B32EB /* LoginLocalDataManager.swift */; };
+		BD96E72828384403004B32EB /* LoginProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD96E72128384403004B32EB /* LoginProtocols.swift */; };
+		BD96E72928384403004B32EB /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD96E72228384403004B32EB /* LoginInteractor.swift */; };
+		BD96E72A28384403004B32EB /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD96E72328384403004B32EB /* LoginView.swift */; };
+		BD96E72B28384403004B32EB /* LoginRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD96E72428384403004B32EB /* LoginRemoteDataManager.swift */; };
+		BD96E72C28384403004B32EB /* LoginWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD96E72528384403004B32EB /* LoginWireFrame.swift */; };
+		BD96E72E283846FB004B32EB /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD96E72D283846FB004B32EB /* Login.storyboard */; };
+		BD96E73728384ECD004B32EB /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD96E73028384ECD004B32EB /* SignUpPresenter.swift */; };
+		BD96E73828384ECD004B32EB /* SignUpLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD96E73128384ECD004B32EB /* SignUpLocalDataManager.swift */; };
+		BD96E73928384ECD004B32EB /* SignUpProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD96E73228384ECD004B32EB /* SignUpProtocols.swift */; };
+		BD96E73A28384ECD004B32EB /* SignUpInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD96E73328384ECD004B32EB /* SignUpInteractor.swift */; };
+		BD96E73B28384ECD004B32EB /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD96E73428384ECD004B32EB /* SignUpView.swift */; };
+		BD96E73C28384ECD004B32EB /* SignUpRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD96E73528384ECD004B32EB /* SignUpRemoteDataManager.swift */; };
+		BD96E73D28384ECD004B32EB /* SignUpWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD96E73628384ECD004B32EB /* SignUpWireFrame.swift */; };
+		BD96E73F28384EE9004B32EB /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD96E73E28384EE9004B32EB /* SignUp.storyboard */; };
+		FA15F5892838CADE0019B95F /* CatalogAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA15F5882838CADE0019B95F /* CatalogAPIError.swift */; };
+		FA15F58B2838CD950019B95F /* UserLoginEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA15F58A2838CD950019B95F /* UserLoginEntity.swift */; };
+		FA66A47A283C39AB00A535EF /* CardClass.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA66A479283C39AB00A535EF /* CardClass.xib */; };
+		FA66A48A283C4C8B00A535EF /* CardClassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA66A489283C4C8B00A535EF /* CardClassView.swift */; };
+		FAABFDAB283AE7100007F118 /* HomeDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABFDA4283AE7100007F118 /* HomeDetailPresenter.swift */; };
+		FAABFDAC283AE7100007F118 /* HomeDetailLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABFDA5283AE7100007F118 /* HomeDetailLocalDataManager.swift */; };
+		FAABFDAD283AE7100007F118 /* HomeDetailProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABFDA6283AE7100007F118 /* HomeDetailProtocols.swift */; };
+		FAABFDAE283AE7100007F118 /* HomeDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABFDA7283AE7100007F118 /* HomeDetailInteractor.swift */; };
+		FAABFDAF283AE7100007F118 /* HomeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABFDA8283AE7100007F118 /* HomeDetailView.swift */; };
+		FAABFDB0283AE7100007F118 /* HomeDetailRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABFDA9283AE7100007F118 /* HomeDetailRemoteDataManager.swift */; };
+		FAABFDB1283AE7100007F118 /* HomeDetailWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABFDAA283AE7100007F118 /* HomeDetailWireFrame.swift */; };
+		FAABFDB3283AF1E80007F118 /* HomeDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAABFDB2283AF1E80007F118 /* HomeDetail.storyboard */; };
+		FAABFDB5283B132E0007F118 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABFDB4283B132E0007F118 /* LoadingView.swift */; };
+		FAABFDBA283B38230007F118 /* waitingloading.json in Resources */ = {isa = PBXBuildFile; fileRef = FAABFDB9283B38230007F118 /* waitingloading.json */; };
+		FABC90B8283B551C00C6D945 /* ClassSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABC90B7283B551C00C6D945 /* ClassSchedule.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,9 +79,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		503D06570756F3A2D7D5F21B /* Pods-examenSicloTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-examenSicloTests.debug.xcconfig"; path = "Target Support Files/Pods-examenSicloTests/Pods-examenSicloTests.debug.xcconfig"; sourceTree = "<group>"; };
+		70AFBAFDB6C99DBCB6CC2461 /* Pods-examenSicloTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-examenSicloTests.release.xcconfig"; path = "Target Support Files/Pods-examenSicloTests/Pods-examenSicloTests.release.xcconfig"; sourceTree = "<group>"; };
+		7FB79BEE015A79577C940F8C /* Pods-examenSiclo-examenSicloUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-examenSiclo-examenSicloUITests.release.xcconfig"; path = "Target Support Files/Pods-examenSiclo-examenSicloUITests/Pods-examenSiclo-examenSicloUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9711952331AB3FF6BB1D3047 /* Pods_examenSiclo_examenSicloUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_examenSiclo_examenSicloUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C4127CE930FD47E1B8C8302 /* Pods-examenSiclo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-examenSiclo.debug.xcconfig"; path = "Target Support Files/Pods-examenSiclo/Pods-examenSiclo.debug.xcconfig"; sourceTree = "<group>"; };
+		A45031B6447087E01F23BF0C /* Pods_examenSicloTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_examenSicloTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB476DD2551FE6366B48C079 /* Pods-examenSiclo-examenSicloUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-examenSiclo-examenSicloUITests.debug.xcconfig"; path = "Target Support Files/Pods-examenSiclo-examenSicloUITests/Pods-examenSiclo-examenSicloUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		BD0F4B962836C3260092172B /* examenSiclo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = examenSiclo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD0F4B992836C3260092172B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BD0F4B9B2836C3260092172B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		BD0F4B9D2836C3260092172B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BD0F4BA02836C3260092172B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BD0F4BA32836C3260092172B /* examenSiclo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = examenSiclo.xcdatamodel; sourceTree = "<group>"; };
@@ -51,6 +99,48 @@
 		BD0F4BB92836C32A0092172B /* examenSicloUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = examenSicloUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD0F4BBD2836C32A0092172B /* examenSicloUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = examenSicloUITests.swift; sourceTree = "<group>"; };
 		BD0F4BBF2836C32A0092172B /* examenSicloUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = examenSicloUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BD0F4BCC2836C8420092172B /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		BD0F4BCD2836C8430092172B /* MainLocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainLocalDataManager.swift; sourceTree = "<group>"; };
+		BD0F4BCE2836C8430092172B /* MainProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainProtocols.swift; sourceTree = "<group>"; };
+		BD0F4BCF2836C8430092172B /* MainInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
+		BD0F4BD02836C8430092172B /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		BD0F4BD12836C8430092172B /* MainRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRemoteDataManager.swift; sourceTree = "<group>"; };
+		BD0F4BD22836C8430092172B /* MainWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWireFrame.swift; sourceTree = "<group>"; };
+		BD96E71A283834B7004B32EB /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		BD96E71C2838351F004B32EB /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		BD96E71F28384403004B32EB /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		BD96E72028384403004B32EB /* LoginLocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginLocalDataManager.swift; sourceTree = "<group>"; };
+		BD96E72128384403004B32EB /* LoginProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProtocols.swift; sourceTree = "<group>"; };
+		BD96E72228384403004B32EB /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		BD96E72328384403004B32EB /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		BD96E72428384403004B32EB /* LoginRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRemoteDataManager.swift; sourceTree = "<group>"; };
+		BD96E72528384403004B32EB /* LoginWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWireFrame.swift; sourceTree = "<group>"; };
+		BD96E72D283846FB004B32EB /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		BD96E73028384ECD004B32EB /* SignUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenter.swift; sourceTree = "<group>"; };
+		BD96E73128384ECD004B32EB /* SignUpLocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpLocalDataManager.swift; sourceTree = "<group>"; };
+		BD96E73228384ECD004B32EB /* SignUpProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpProtocols.swift; sourceTree = "<group>"; };
+		BD96E73328384ECD004B32EB /* SignUpInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpInteractor.swift; sourceTree = "<group>"; };
+		BD96E73428384ECD004B32EB /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		BD96E73528384ECD004B32EB /* SignUpRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpRemoteDataManager.swift; sourceTree = "<group>"; };
+		BD96E73628384ECD004B32EB /* SignUpWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpWireFrame.swift; sourceTree = "<group>"; };
+		BD96E73E28384EE9004B32EB /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
+		D5C54F3583534954942E87AE /* Pods_examenSiclo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_examenSiclo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFB444BE8DE96485B906073F /* Pods-examenSiclo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-examenSiclo.release.xcconfig"; path = "Target Support Files/Pods-examenSiclo/Pods-examenSiclo.release.xcconfig"; sourceTree = "<group>"; };
+		FA15F5882838CADE0019B95F /* CatalogAPIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogAPIError.swift; sourceTree = "<group>"; };
+		FA15F58A2838CD950019B95F /* UserLoginEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLoginEntity.swift; sourceTree = "<group>"; };
+		FA66A479283C39AB00A535EF /* CardClass.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardClass.xib; sourceTree = "<group>"; };
+		FA66A489283C4C8B00A535EF /* CardClassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardClassView.swift; sourceTree = "<group>"; };
+		FAABFDA4283AE7100007F118 /* HomeDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailPresenter.swift; sourceTree = "<group>"; };
+		FAABFDA5283AE7100007F118 /* HomeDetailLocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailLocalDataManager.swift; sourceTree = "<group>"; };
+		FAABFDA6283AE7100007F118 /* HomeDetailProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailProtocols.swift; sourceTree = "<group>"; };
+		FAABFDA7283AE7100007F118 /* HomeDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailInteractor.swift; sourceTree = "<group>"; };
+		FAABFDA8283AE7100007F118 /* HomeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailView.swift; sourceTree = "<group>"; };
+		FAABFDA9283AE7100007F118 /* HomeDetailRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailRemoteDataManager.swift; sourceTree = "<group>"; };
+		FAABFDAA283AE7100007F118 /* HomeDetailWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailWireFrame.swift; sourceTree = "<group>"; };
+		FAABFDB2283AF1E80007F118 /* HomeDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeDetail.storyboard; sourceTree = "<group>"; };
+		FAABFDB4283B132E0007F118 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		FAABFDB9283B38230007F118 /* waitingloading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = waitingloading.json; sourceTree = "<group>"; };
+		FABC90B7283B551C00C6D945 /* ClassSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassSchedule.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +148,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D829AF1248E9BE799D984A4 /* Pods_examenSiclo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +156,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA9E252884DCF01FEFC0FD83 /* Pods_examenSicloTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +164,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C3E751E28FFC6A99724AFB3 /* Pods_examenSiclo_examenSicloUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C8316633A041497BFC490CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D5C54F3583534954942E87AE /* Pods_examenSiclo.framework */,
+				9711952331AB3FF6BB1D3047 /* Pods_examenSiclo_examenSicloUITests.framework */,
+				A45031B6447087E01F23BF0C /* Pods_examenSicloTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2DFF1C6B24D183A6E3AEE520 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9C4127CE930FD47E1B8C8302 /* Pods-examenSiclo.debug.xcconfig */,
+				EFB444BE8DE96485B906073F /* Pods-examenSiclo.release.xcconfig */,
+				AB476DD2551FE6366B48C079 /* Pods-examenSiclo-examenSicloUITests.debug.xcconfig */,
+				7FB79BEE015A79577C940F8C /* Pods-examenSiclo-examenSicloUITests.release.xcconfig */,
+				503D06570756F3A2D7D5F21B /* Pods-examenSicloTests.debug.xcconfig */,
+				70AFBAFDB6C99DBCB6CC2461 /* Pods-examenSicloTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		BD0F4B8D2836C3260092172B = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +201,8 @@
 				BD0F4BB22836C32A0092172B /* examenSicloTests */,
 				BD0F4BBC2836C32A0092172B /* examenSicloUITests */,
 				BD0F4B972836C3260092172B /* Products */,
+				2DFF1C6B24D183A6E3AEE520 /* Pods */,
+				1C8316633A041497BFC490CC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,11 +219,10 @@
 		BD0F4B982836C3260092172B /* examenSiclo */ = {
 			isa = PBXGroup;
 			children = (
+				BD0F4BDD2836EB040092172B /* Support Files */,
+				BD0F4BDC2836EAF20092172B /* Modules */,
 				BD0F4B992836C3260092172B /* AppDelegate.swift */,
-				BD0F4B9B2836C3260092172B /* SceneDelegate.swift */,
 				BD0F4B9D2836C3260092172B /* ViewController.swift */,
-				BD0F4B9F2836C3260092172B /* Main.storyboard */,
-				BD0F4BA52836C32A0092172B /* Assets.xcassets */,
 				BD0F4BA72836C32A0092172B /* LaunchScreen.storyboard */,
 				BD0F4BAA2836C32A0092172B /* Info.plist */,
 				BD0F4BA22836C3260092172B /* examenSiclo.xcdatamodeld */,
@@ -130,6 +247,134 @@
 			path = examenSicloUITests;
 			sourceTree = "<group>";
 		};
+		BD0F4BDB2836C8610092172B /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				BD0F4B9F2836C3260092172B /* Main.storyboard */,
+				BD0F4BD02836C8430092172B /* MainView.swift */,
+				BD0F4BCC2836C8420092172B /* MainPresenter.swift */,
+				BD0F4BCD2836C8430092172B /* MainLocalDataManager.swift */,
+				BD0F4BCE2836C8430092172B /* MainProtocols.swift */,
+				BD0F4BCF2836C8430092172B /* MainInteractor.swift */,
+				BD0F4BD12836C8430092172B /* MainRemoteDataManager.swift */,
+				BD0F4BD22836C8430092172B /* MainWireFrame.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		BD0F4BDC2836EAF20092172B /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				FA66A476283C384200A535EF /* CardClass */,
+				FA8E69BF283AE628004E1D07 /* HomeDetail */,
+				BD96E72F28384EB8004B32EB /* SignUp */,
+				BD96E71E283843E4004B32EB /* Login */,
+				BD0F4BDB2836C8610092172B /* Main */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		BD0F4BDD2836EB040092172B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BD96E7182838348C004B32EB /* Utilities */,
+				BD0F4BA52836C32A0092172B /* Assets.xcassets */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		BD96E7182838348C004B32EB /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				BD96E7192838349C004B32EB /* Extensions */,
+				BD96E71C2838351F004B32EB /* Enums.swift */,
+				FAABFDB4283B132E0007F118 /* LoadingView.swift */,
+				FAABFDB9283B38230007F118 /* waitingloading.json */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		BD96E7192838349C004B32EB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BD96E71A283834B7004B32EB /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BD96E71E283843E4004B32EB /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				BD96E72D283846FB004B32EB /* Login.storyboard */,
+				BD96E72328384403004B32EB /* LoginView.swift */,
+				BD96E71F28384403004B32EB /* LoginPresenter.swift */,
+				BD96E72028384403004B32EB /* LoginLocalDataManager.swift */,
+				BD96E72128384403004B32EB /* LoginProtocols.swift */,
+				BD96E72228384403004B32EB /* LoginInteractor.swift */,
+				BD96E72428384403004B32EB /* LoginRemoteDataManager.swift */,
+				BD96E72528384403004B32EB /* LoginWireFrame.swift */,
+				FA15F5872838C99E0019B95F /* EntitiesLogin */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		BD96E72F28384EB8004B32EB /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				BD96E73E28384EE9004B32EB /* SignUp.storyboard */,
+				BD96E73428384ECD004B32EB /* SignUpView.swift */,
+				BD96E73028384ECD004B32EB /* SignUpPresenter.swift */,
+				BD96E73128384ECD004B32EB /* SignUpLocalDataManager.swift */,
+				BD96E73228384ECD004B32EB /* SignUpProtocols.swift */,
+				BD96E73328384ECD004B32EB /* SignUpInteractor.swift */,
+				BD96E73528384ECD004B32EB /* SignUpRemoteDataManager.swift */,
+				BD96E73628384ECD004B32EB /* SignUpWireFrame.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		FA15F5872838C99E0019B95F /* EntitiesLogin */ = {
+			isa = PBXGroup;
+			children = (
+				FA15F5882838CADE0019B95F /* CatalogAPIError.swift */,
+				FA15F58A2838CD950019B95F /* UserLoginEntity.swift */,
+			);
+			path = EntitiesLogin;
+			sourceTree = "<group>";
+		};
+		FA66A476283C384200A535EF /* CardClass */ = {
+			isa = PBXGroup;
+			children = (
+				FA66A479283C39AB00A535EF /* CardClass.xib */,
+				FA66A489283C4C8B00A535EF /* CardClassView.swift */,
+			);
+			path = CardClass;
+			sourceTree = "<group>";
+		};
+		FA8E69BF283AE628004E1D07 /* HomeDetail */ = {
+			isa = PBXGroup;
+			children = (
+				FAABFDB2283AF1E80007F118 /* HomeDetail.storyboard */,
+				FAABFDA8283AE7100007F118 /* HomeDetailView.swift */,
+				FAABFDA4283AE7100007F118 /* HomeDetailPresenter.swift */,
+				FAABFDA5283AE7100007F118 /* HomeDetailLocalDataManager.swift */,
+				FAABFDA6283AE7100007F118 /* HomeDetailProtocols.swift */,
+				FAABFDA7283AE7100007F118 /* HomeDetailInteractor.swift */,
+				FAABFDA9283AE7100007F118 /* HomeDetailRemoteDataManager.swift */,
+				FAABFDAA283AE7100007F118 /* HomeDetailWireFrame.swift */,
+				FABC90B6283B53C900C6D945 /* EntitiesHomeDetail */,
+			);
+			path = HomeDetail;
+			sourceTree = "<group>";
+		};
+		FABC90B6283B53C900C6D945 /* EntitiesHomeDetail */ = {
+			isa = PBXGroup;
+			children = (
+				FABC90B7283B551C00C6D945 /* ClassSchedule.swift */,
+			);
+			path = EntitiesHomeDetail;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,9 +382,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BD0F4BC32836C32A0092172B /* Build configuration list for PBXNativeTarget "examenSiclo" */;
 			buildPhases = (
+				B1490D77E01DC41EAE692BAD /* [CP] Check Pods Manifest.lock */,
 				BD0F4B922836C3260092172B /* Sources */,
 				BD0F4B932836C3260092172B /* Frameworks */,
 				BD0F4B942836C3260092172B /* Resources */,
+				AB9D2D9C874115AA78B3CC3D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -154,6 +401,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BD0F4BC62836C32A0092172B /* Build configuration list for PBXNativeTarget "examenSicloTests" */;
 			buildPhases = (
+				239CFF51521DEED9FE444B9E /* [CP] Check Pods Manifest.lock */,
 				BD0F4BAB2836C32A0092172B /* Sources */,
 				BD0F4BAC2836C32A0092172B /* Frameworks */,
 				BD0F4BAD2836C32A0092172B /* Resources */,
@@ -172,9 +420,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BD0F4BC92836C32A0092172B /* Build configuration list for PBXNativeTarget "examenSicloUITests" */;
 			buildPhases = (
+				1F1AAAF963A1C49A7092474B /* [CP] Check Pods Manifest.lock */,
 				BD0F4BB52836C32A0092172B /* Sources */,
 				BD0F4BB62836C32A0092172B /* Frameworks */,
 				BD0F4BB72836C32A0092172B /* Resources */,
+				47C9F365401CC87F6107DE63 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -234,9 +484,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD96E72E283846FB004B32EB /* Login.storyboard in Resources */,
 				BD0F4BA92836C32A0092172B /* LaunchScreen.storyboard in Resources */,
 				BD0F4BA62836C32A0092172B /* Assets.xcassets in Resources */,
 				BD0F4BA12836C3260092172B /* Main.storyboard in Resources */,
+				FAABFDB3283AF1E80007F118 /* HomeDetail.storyboard in Resources */,
+				BD96E73F28384EE9004B32EB /* SignUp.storyboard in Resources */,
+				FA66A47A283C39AB00A535EF /* CardClass.xib in Resources */,
+				FAABFDBA283B38230007F118 /* waitingloading.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,15 +511,152 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1F1AAAF963A1C49A7092474B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-examenSiclo-examenSicloUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		239CFF51521DEED9FE444B9E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-examenSicloTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		47C9F365401CC87F6107DE63 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-examenSiclo-examenSicloUITests/Pods-examenSiclo-examenSicloUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-examenSiclo-examenSicloUITests/Pods-examenSiclo-examenSicloUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-examenSiclo-examenSicloUITests/Pods-examenSiclo-examenSicloUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB9D2D9C874115AA78B3CC3D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-examenSiclo/Pods-examenSiclo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-examenSiclo/Pods-examenSiclo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-examenSiclo/Pods-examenSiclo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B1490D77E01DC41EAE692BAD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-examenSiclo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BD0F4B922836C3260092172B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD0F4BD32836C8430092172B /* MainPresenter.swift in Sources */,
+				FABC90B8283B551C00C6D945 /* ClassSchedule.swift in Sources */,
+				FAABFDAD283AE7100007F118 /* HomeDetailProtocols.swift in Sources */,
+				BD96E73928384ECD004B32EB /* SignUpProtocols.swift in Sources */,
+				FAABFDB0283AE7100007F118 /* HomeDetailRemoteDataManager.swift in Sources */,
+				FA15F5892838CADE0019B95F /* CatalogAPIError.swift in Sources */,
+				BD0F4BD72836C8430092172B /* MainView.swift in Sources */,
+				BD96E72C28384403004B32EB /* LoginWireFrame.swift in Sources */,
+				FA15F58B2838CD950019B95F /* UserLoginEntity.swift in Sources */,
+				FAABFDAC283AE7100007F118 /* HomeDetailLocalDataManager.swift in Sources */,
+				FAABFDAB283AE7100007F118 /* HomeDetailPresenter.swift in Sources */,
+				FAABFDAF283AE7100007F118 /* HomeDetailView.swift in Sources */,
+				BD96E73B28384ECD004B32EB /* SignUpView.swift in Sources */,
+				FA66A48A283C4C8B00A535EF /* CardClassView.swift in Sources */,
 				BD0F4BA42836C3260092172B /* examenSiclo.xcdatamodeld in Sources */,
+				BD0F4BD92836C8430092172B /* MainWireFrame.swift in Sources */,
+				FAABFDAE283AE7100007F118 /* HomeDetailInteractor.swift in Sources */,
+				BD96E72928384403004B32EB /* LoginInteractor.swift in Sources */,
+				BD96E73C28384ECD004B32EB /* SignUpRemoteDataManager.swift in Sources */,
+				FAABFDB5283B132E0007F118 /* LoadingView.swift in Sources */,
+				BD0F4BD52836C8430092172B /* MainProtocols.swift in Sources */,
+				BD0F4BD42836C8430092172B /* MainLocalDataManager.swift in Sources */,
+				BD96E73828384ECD004B32EB /* SignUpLocalDataManager.swift in Sources */,
+				BD96E72828384403004B32EB /* LoginProtocols.swift in Sources */,
 				BD0F4B9E2836C3260092172B /* ViewController.swift in Sources */,
 				BD0F4B9A2836C3260092172B /* AppDelegate.swift in Sources */,
-				BD0F4B9C2836C3260092172B /* SceneDelegate.swift in Sources */,
+				BD96E72A28384403004B32EB /* LoginView.swift in Sources */,
+				BD96E72628384403004B32EB /* LoginPresenter.swift in Sources */,
+				BD0F4BD82836C8430092172B /* MainRemoteDataManager.swift in Sources */,
+				BD96E71B283834B7004B32EB /* Extensions.swift in Sources */,
+				FAABFDB1283AE7100007F118 /* HomeDetailWireFrame.swift in Sources */,
+				BD96E71D2838351F004B32EB /* Enums.swift in Sources */,
+				BD96E73A28384ECD004B32EB /* SignUpInteractor.swift in Sources */,
+				BD0F4BD62836C8430092172B /* MainInteractor.swift in Sources */,
+				BD96E73D28384ECD004B32EB /* SignUpWireFrame.swift in Sources */,
+				BD96E72728384403004B32EB /* LoginLocalDataManager.swift in Sources */,
+				BD96E73728384ECD004B32EB /* SignUpPresenter.swift in Sources */,
+				BD96E72B28384403004B32EB /* LoginRemoteDataManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,7 +762,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -424,7 +816,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -436,6 +828,7 @@
 		};
 		BD0F4BC42836C32A0092172B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C4127CE930FD47E1B8C8302 /* Pods-examenSiclo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -444,9 +837,11 @@
 				DEVELOPMENT_TEAM = GZR6B2TY6C;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = examenSiclo/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Siclo Challenge";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -458,12 +853,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		BD0F4BC52836C32A0092172B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFB444BE8DE96485B906073F /* Pods-examenSiclo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -472,9 +868,11 @@
 				DEVELOPMENT_TEAM = GZR6B2TY6C;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = examenSiclo/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Siclo Challenge";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -486,12 +884,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		BD0F4BC72836C32A0092172B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 503D06570756F3A2D7D5F21B /* Pods-examenSicloTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +911,7 @@
 		};
 		BD0F4BC82836C32A0092172B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70AFBAFDB6C99DBCB6CC2461 /* Pods-examenSicloTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -532,6 +932,7 @@
 		};
 		BD0F4BCA2836C32A0092172B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB476DD2551FE6366B48C079 /* Pods-examenSiclo-examenSicloUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -550,6 +951,7 @@
 		};
 		BD0F4BCB2836C32A0092172B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FB79BEE015A79577C940F8C /* Pods-examenSiclo-examenSicloUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
