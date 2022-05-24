@@ -48,6 +48,7 @@
 		FA15F58B2838CD950019B95F /* UserLoginEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA15F58A2838CD950019B95F /* UserLoginEntity.swift */; };
 		FA66A47A283C39AB00A535EF /* CardClass.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA66A479283C39AB00A535EF /* CardClass.xib */; };
 		FA66A48A283C4C8B00A535EF /* CardClassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA66A489283C4C8B00A535EF /* CardClassView.swift */; };
+		FA8BA805283C9C1500D1B893 /* CardClassSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8BA804283C9C1500D1B893 /* CardClassSchedule.swift */; };
 		FAABFDAB283AE7100007F118 /* HomeDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABFDA4283AE7100007F118 /* HomeDetailPresenter.swift */; };
 		FAABFDAC283AE7100007F118 /* HomeDetailLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABFDA5283AE7100007F118 /* HomeDetailLocalDataManager.swift */; };
 		FAABFDAD283AE7100007F118 /* HomeDetailProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABFDA6283AE7100007F118 /* HomeDetailProtocols.swift */; };
@@ -58,7 +59,6 @@
 		FAABFDB3283AF1E80007F118 /* HomeDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAABFDB2283AF1E80007F118 /* HomeDetail.storyboard */; };
 		FAABFDB5283B132E0007F118 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABFDB4283B132E0007F118 /* LoadingView.swift */; };
 		FAABFDBA283B38230007F118 /* waitingloading.json in Resources */ = {isa = PBXBuildFile; fileRef = FAABFDB9283B38230007F118 /* waitingloading.json */; };
-		FABC90B8283B551C00C6D945 /* ClassSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABC90B7283B551C00C6D945 /* ClassSchedule.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -130,6 +130,7 @@
 		FA15F58A2838CD950019B95F /* UserLoginEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLoginEntity.swift; sourceTree = "<group>"; };
 		FA66A479283C39AB00A535EF /* CardClass.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardClass.xib; sourceTree = "<group>"; };
 		FA66A489283C4C8B00A535EF /* CardClassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardClassView.swift; sourceTree = "<group>"; };
+		FA8BA804283C9C1500D1B893 /* CardClassSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardClassSchedule.swift; sourceTree = "<group>"; };
 		FAABFDA4283AE7100007F118 /* HomeDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailPresenter.swift; sourceTree = "<group>"; };
 		FAABFDA5283AE7100007F118 /* HomeDetailLocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailLocalDataManager.swift; sourceTree = "<group>"; };
 		FAABFDA6283AE7100007F118 /* HomeDetailProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailProtocols.swift; sourceTree = "<group>"; };
@@ -140,7 +141,6 @@
 		FAABFDB2283AF1E80007F118 /* HomeDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeDetail.storyboard; sourceTree = "<group>"; };
 		FAABFDB4283B132E0007F118 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		FAABFDB9283B38230007F118 /* waitingloading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = waitingloading.json; sourceTree = "<group>"; };
-		FABC90B7283B551C00C6D945 /* ClassSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassSchedule.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -370,7 +370,7 @@
 		FABC90B6283B53C900C6D945 /* EntitiesHomeDetail */ = {
 			isa = PBXGroup;
 			children = (
-				FABC90B7283B551C00C6D945 /* ClassSchedule.swift */,
+				FA8BA804283C9C1500D1B893 /* CardClassSchedule.swift */,
 			);
 			path = EntitiesHomeDetail;
 			sourceTree = "<group>";
@@ -620,7 +620,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD0F4BD32836C8430092172B /* MainPresenter.swift in Sources */,
-				FABC90B8283B551C00C6D945 /* ClassSchedule.swift in Sources */,
 				FAABFDAD283AE7100007F118 /* HomeDetailProtocols.swift in Sources */,
 				BD96E73928384ECD004B32EB /* SignUpProtocols.swift in Sources */,
 				FAABFDB0283AE7100007F118 /* HomeDetailRemoteDataManager.swift in Sources */,
@@ -628,6 +627,7 @@
 				BD0F4BD72836C8430092172B /* MainView.swift in Sources */,
 				BD96E72C28384403004B32EB /* LoginWireFrame.swift in Sources */,
 				FA15F58B2838CD950019B95F /* UserLoginEntity.swift in Sources */,
+				FA8BA805283C9C1500D1B893 /* CardClassSchedule.swift in Sources */,
 				FAABFDAC283AE7100007F118 /* HomeDetailLocalDataManager.swift in Sources */,
 				FAABFDAB283AE7100007F118 /* HomeDetailPresenter.swift in Sources */,
 				FAABFDAF283AE7100007F118 /* HomeDetailView.swift in Sources */,

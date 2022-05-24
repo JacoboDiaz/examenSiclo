@@ -9,15 +9,19 @@ import UIKit
 
 class CardClassView: UITableViewCell {
 
+    @IBOutlet weak var hourLbl: UILabel!
+    @IBOutlet weak var nameLbl: UILabel!
+    @IBOutlet weak var exerciseLbl: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    func configCard(classes: Classes){
+        self.hourLbl.text = "· \(classes.hour)"
+        self.nameLbl.text = classes.instructor.nombre
+        self.exerciseLbl.text = classes.tipo
     }
 
 }

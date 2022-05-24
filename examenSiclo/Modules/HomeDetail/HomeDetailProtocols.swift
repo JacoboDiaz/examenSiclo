@@ -8,12 +8,13 @@
 
 import Foundation
 import UIKit
+import SwiftyJSON
 
 protocol HomeDetailViewProtocol: AnyObject {
     // PRESENTER -> VIEW
     var presenter: HomeDetailPresenterProtocol? { get set }
     
-    func presenterCallBackData(classSchedule: [ClassSchedule], status: Bool)
+    func presenterCallBackData(classSchedule: [CalendarClass], status: Bool)
     
     func showLoadingView()
     func hidenLoadingView()
@@ -35,7 +36,7 @@ protocol HomeDetailPresenterProtocol: AnyObject {
 
 protocol HomeDetailInteractorOutputProtocol: AnyObject {
     // INTERACTOR -> PRESENTER
-    func interactorCallBackData(classSchedule : [ClassSchedule], status: Bool)
+    func interactorCallBackData(classSchedule: [CalendarClass], status: Bool)
 }
 
 protocol HomeDetailInteractorInputProtocol: AnyObject {
@@ -60,7 +61,8 @@ protocol HomeDetailRemoteDataManagerInputProtocol: AnyObject {
 
 protocol HomeDetailRemoteDataManagerOutputProtocol: AnyObject {
     // REMOTEDATAMANAGER -> INTERACTOR
-    func homeDetailRemoteDataManagerCallBackData(classSchedule : [ClassSchedule], status : Bool)
+    func homeDetailRemoteDataManagerCallBackData(classScheduleJSON : JSON, status : Bool)
+    
 }
 
 protocol HomeDetailLocalDataManagerInputProtocol: AnyObject {

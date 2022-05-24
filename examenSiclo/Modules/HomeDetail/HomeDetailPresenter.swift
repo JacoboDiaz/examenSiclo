@@ -28,7 +28,7 @@ extension HomeDetailPresenter: HomeDetailPresenterProtocol {
 extension HomeDetailPresenter: HomeDetailInteractorOutputProtocol {
     // TODO: implement interactor output methods
     
-    func interactorCallBackData(classSchedule: [ClassSchedule], status: Bool) {
+    func interactorCallBackData(classSchedule: [CalendarClass], status: Bool) {
         view?.presenterCallBackData(classSchedule: classSchedule, status: status)
     }
     

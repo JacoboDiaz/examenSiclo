@@ -13,8 +13,9 @@ class HomeDetailView: UIViewController {
 
     // MARK: Properties
     var presenter: HomeDetailPresenterProtocol?
+    var calendarClass = CalendarClass()
+    
     @IBOutlet weak var contentDataView: UIView!
-    var countCell = 0
     @IBOutlet weak var classesTbl: UITableView! {
         didSet{
             classesTbl.register(UINib(nibName: "CardClass", bundle: nil), forCellReuseIdentifier: "cardClassView")
@@ -32,14 +33,14 @@ class HomeDetailView: UIViewController {
 
 extension HomeDetailView: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return countCell
+        return calendarClass.classes.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cardClassView",for: indexPath) as! CardClassView
+        cell.configCard(classes: calendarClass.classes[indexPath.row])
         return cell
     }
-    
     
 }
 
@@ -50,10 +51,14 @@ extension HomeDetailView: UITabBarDelegate {
 extension HomeDetailView: HomeDetailViewProtocol {
     // TODO: implement view output methods
     
-    func presenterCallBackData(classSchedule: [ClassSchedule], status: Bool) {
+    func presenterCallBackData(classSchedule: [CalendarClass], status: Bool) {
+        
+        if !status {
+            dismiss(animated: true)
+        }
         print(status)
         print(classSchedule)
-        countCell = 3
+        calendarClass = classSchedule.first ?? CalendarClass()
         classesTbl.reloadData()
         contentDataView.isHidden = false
         hidenLoadingView()

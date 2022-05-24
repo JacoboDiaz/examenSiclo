@@ -128,6 +128,11 @@
                     <constraint firstItem="mel-4k-3ec" firstAttribute="top" secondItem="i99-Dw-OVe" secondAttribute="top" constant="15" id="rI5-Yr-cxZ"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="exerciseLbl" destination="igp-EE-tus" id="bau-IO-2cT"/>
+                <outlet property="hourLbl" destination="mel-4k-3ec" id="okN-Ju-sBZ"/>
+                <outlet property="nameLbl" destination="qh8-RW-M5b" id="edw-wO-ZSe"/>
+            </connections>
             <point key="canvasLocation" x="-10.144927536231885" y="13.058035714285714"/>
         </tableViewCell>
     </objects>

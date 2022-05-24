@@ -25,9 +25,7 @@ class HomeDetailRemoteDataManager:HomeDetailRemoteDataManagerInputProtocol {
         let urlRequest = URL(string: url)
         var request = URLRequest(url: urlRequest!)
         request.httpMethod = "GET"
-//        request.httpBody = jsonBody
         request.allHTTPHeaderFields = headers
-        var classSchedule : [ClassSchedule] = [ClassSchedule]()
         AF.request(request)
             .validate(statusCode: 200..<600)
             .response { (response) in
@@ -36,33 +34,21 @@ class HomeDetailRemoteDataManager:HomeDetailRemoteDataManagerInputProtocol {
                     if response.value != nil {
                         if response.response?.statusCode == 200 {
                             print(JSON(response.value! ?? ""))
-                            
-                            guard let data = response.data else {return}
-                            do {
-                                let decoder = JSONDecoder()
-                                
-                                classSchedule.append(try decoder.decode(ClassSchedule.self, from: data))
-//                                let classSchedule = try decoder.decode(ClassSchedule.self, from: data)
-                                print(classSchedule)
-                                self.remoteRequestHandler?.homeDetailRemoteDataManagerCallBackData(classSchedule: classSchedule, status: true)
-                            } catch {
-                                print(error)
-                                self.remoteRequestHandler?.homeDetailRemoteDataManagerCallBackData(classSchedule: classSchedule, status: true)
-                            }
-
+                            let json = JSON(response.value! ?? "")
+                            self.remoteRequestHandler?.homeDetailRemoteDataManagerCallBackData(classScheduleJSON: json, status: true)
                         }else{
-//                            self.remoteRequestHandler?.homeDetailRemoteDataManagerCallBackData(classSchedule: classSchedule, status: false)
+//                            self.remoteRequestHandler?.homeDetailRemoteDataManagerCallBackData(classScheduleJSON: JSON(), status: false)
                             print(JSON(response.value! ?? ""))
                         }
                     }else {
-//                        self.remoteRequestHandler?.homeDetailRemoteDataManagerCallBackData(classSchedule: classSchedule, status: false)
+//                        self.remoteRequestHandler?.homeDetailRemoteDataManagerCallBackData(classScheduleJSON: JSON(), status: false)
                         print(response.response?.statusCode ?? "")
                     }
                     
                 case .failure(let error):
                     print(response.error as Any)
                     print(error.localizedDescription)
-//                    self.remoteRequestHandler?.homeDetailRemoteDataManagerCallBackData(classSchedule: classSchedule, status: false)
+//                    self.remoteRequestHandler?.homeDetailRemoteDataManagerCallBackData(classScheduleJSON: JSON(), status: false)
                 }
             }
         
