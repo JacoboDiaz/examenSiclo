@@ -59,6 +59,8 @@
 		FAABFDB3283AF1E80007F118 /* HomeDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAABFDB2283AF1E80007F118 /* HomeDetail.storyboard */; };
 		FAABFDB5283B132E0007F118 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABFDB4283B132E0007F118 /* LoadingView.swift */; };
 		FAABFDBA283B38230007F118 /* waitingloading.json in Resources */ = {isa = PBXBuildFile; fileRef = FAABFDB9283B38230007F118 /* waitingloading.json */; };
+		FACEABF2283DCE37004D5A8F /* DateSelectionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACEABF0283DCE37004D5A8F /* DateSelectionCollectionViewCell.swift */; };
+		FACEABF3283DCE37004D5A8F /* DateSelectionCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FACEABF1283DCE37004D5A8F /* DateSelectionCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -141,6 +143,8 @@
 		FAABFDB2283AF1E80007F118 /* HomeDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeDetail.storyboard; sourceTree = "<group>"; };
 		FAABFDB4283B132E0007F118 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		FAABFDB9283B38230007F118 /* waitingloading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = waitingloading.json; sourceTree = "<group>"; };
+		FACEABF0283DCE37004D5A8F /* DateSelectionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateSelectionCollectionViewCell.swift; sourceTree = "<group>"; };
+		FACEABF1283DCE37004D5A8F /* DateSelectionCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DateSelectionCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -265,6 +269,7 @@
 		BD0F4BDC2836EAF20092172B /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				FACEABEF283DCDDD004D5A8F /* DateSelection */,
 				FA66A476283C384200A535EF /* CardClass */,
 				FA8E69BF283AE628004E1D07 /* HomeDetail */,
 				BD96E72F28384EB8004B32EB /* SignUp */,
@@ -373,6 +378,15 @@
 				FA8BA804283C9C1500D1B893 /* CardClassSchedule.swift */,
 			);
 			path = EntitiesHomeDetail;
+			sourceTree = "<group>";
+		};
+		FACEABEF283DCDDD004D5A8F /* DateSelection */ = {
+			isa = PBXGroup;
+			children = (
+				FACEABF0283DCE37004D5A8F /* DateSelectionCollectionViewCell.swift */,
+				FACEABF1283DCE37004D5A8F /* DateSelectionCollectionViewCell.xib */,
+			);
+			path = DateSelection;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -491,6 +505,7 @@
 				FAABFDB3283AF1E80007F118 /* HomeDetail.storyboard in Resources */,
 				BD96E73F28384EE9004B32EB /* SignUp.storyboard in Resources */,
 				FA66A47A283C39AB00A535EF /* CardClass.xib in Resources */,
+				FACEABF3283DCE37004D5A8F /* DateSelectionCollectionViewCell.xib in Resources */,
 				FAABFDBA283B38230007F118 /* waitingloading.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -631,6 +646,7 @@
 				FAABFDAC283AE7100007F118 /* HomeDetailLocalDataManager.swift in Sources */,
 				FAABFDAB283AE7100007F118 /* HomeDetailPresenter.swift in Sources */,
 				FAABFDAF283AE7100007F118 /* HomeDetailView.swift in Sources */,
+				FACEABF2283DCE37004D5A8F /* DateSelectionCollectionViewCell.swift in Sources */,
 				BD96E73B28384ECD004B32EB /* SignUpView.swift in Sources */,
 				FA66A48A283C4C8B00A535EF /* CardClassView.swift in Sources */,
 				BD0F4BA42836C3260092172B /* examenSiclo.xcdatamodeld in Sources */,

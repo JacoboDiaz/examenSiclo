@@ -253,3 +253,27 @@ extension UIView{
         return superview!.convert(frame, to: self)
     }
 }
+
+extension UITextField {
+
+    func setStyleLogin() {
+        
+        
+        let paddingViewLeft = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: self.frame.size.height))
+        self.leftView = paddingViewLeft
+        self.leftViewMode = .always
+        
+        let paddingViewRigh = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: self.frame.size.height))
+        self.rightView = paddingViewRigh
+        self.rightViewMode = .always
+        
+        let border = CALayer()
+        let width = CGFloat(0.5)
+        border.borderColor = UIColor.systemGray4.cgColor
+        border.frame = CGRect(x: 0, y: self.frame.size.height - width, width:  self.frame.size.width - 10, height: self.frame.size.height)
+        border.borderWidth = width
+        self.layer.addSublayer(border)
+        self.layer.masksToBounds = true
+    }
+
+}

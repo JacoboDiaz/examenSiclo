@@ -71,6 +71,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func globalConfigUIApp(){
+        
+        let backButtonImage : UIImage = UIImage(named: "icons/icon_back")!
+        UINavigationBar.appearance().backIndicatorImage = backButtonImage
+        UINavigationBar.appearance().backIndicatorTransitionMaskImage = backButtonImage
+        UINavigationBar.appearance().tintColor = .darkGray
+        
+        UINavigationBar.appearance().titleTextAttributes = [
+            NSAttributedString.Key.foregroundColor : UIColor.darkGray,
+            NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 15)
+        ]
+        
+        
     }
 
 }

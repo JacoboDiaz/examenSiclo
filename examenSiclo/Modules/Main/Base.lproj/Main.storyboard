@@ -116,7 +116,9 @@
                             <constraint firstItem="4r0-PE-Od6" firstAttribute="top" secondItem="OL4-wJ-DJv" secondAttribute="bottom" constant="30" id="wfP-jt-Go5"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="oLR-ig-TPn"/>
+                    <navigationItem key="navigationItem" id="oLR-ig-TPn">
+                        <barButtonItem key="backBarButtonItem" title=" " id="aq9-V9-FtM"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

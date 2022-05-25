@@ -46,6 +46,8 @@ class LoginView: UIViewController {
     
     func viewSettings(){
         textFields = [textFieldUser, textFieldPassword]
+        textFieldUser.setStyleLogin()
+        textFieldPassword.setStyleLogin()
         configKeyBoard()
     }
     

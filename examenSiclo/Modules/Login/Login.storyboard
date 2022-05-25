@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Login View-->
+        <!--ENTRAR-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController storyboardIdentifier="LoginView" id="Y6W-OH-hqX" customClass="LoginView" customModule="examenSiclo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginView" title="ENTRAR" id="Y6W-OH-hqX" customClass="LoginView" customModule="examenSiclo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -64,7 +64,7 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="743"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5eK-Cp-Z7h">
-                                        <rect key="frame" x="15" y="50" width="384" height="72"/>
+                                        <rect key="frame" x="20" y="50" width="374" height="72"/>
                                         <string key="text">¡Hola
 de nuevo!</string>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
@@ -72,7 +72,7 @@ de nuevo!</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="jacobo_diazn_0@siclotest.com" placeholder="Correo" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ejY-Sd-zth">
-                                        <rect key="frame" x="15" y="172" width="384" height="50"/>
+                                        <rect key="frame" x="20" y="172" width="374" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="o3f-Bc-dt5"/>
                                         </constraints>
@@ -80,7 +80,7 @@ de nuevo!</string>
                                         <textInputTraits key="textInputTraits" textContentType="email"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="12345" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tdg-g3-sip">
-                                        <rect key="frame" x="15" y="242" width="384" height="50"/>
+                                        <rect key="frame" x="20" y="242" width="374" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="xS0-0k-0MU"/>
                                         </constraints>
@@ -98,15 +98,15 @@ de nuevo!</string>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="bUM-Qq-cPc" secondAttribute="trailing" constant="15" id="0Cy-2H-2Ia"/>
                                     <constraint firstItem="5eK-Cp-Z7h" firstAttribute="top" secondItem="kRm-KN-Xng" secondAttribute="top" constant="50" id="3SR-5O-bpT"/>
-                                    <constraint firstItem="5eK-Cp-Z7h" firstAttribute="leading" secondItem="kRm-KN-Xng" secondAttribute="leading" constant="15" id="Euz-1z-lsN"/>
+                                    <constraint firstItem="5eK-Cp-Z7h" firstAttribute="leading" secondItem="kRm-KN-Xng" secondAttribute="leading" constant="20" id="Euz-1z-lsN"/>
                                     <constraint firstItem="tdg-g3-sip" firstAttribute="top" secondItem="ejY-Sd-zth" secondAttribute="bottom" constant="20" id="Nuc-R6-Jld"/>
                                     <constraint firstItem="bUM-Qq-cPc" firstAttribute="top" secondItem="tdg-g3-sip" secondAttribute="bottom" constant="20" id="QAM-o4-eDV"/>
                                     <constraint firstItem="ejY-Sd-zth" firstAttribute="top" secondItem="5eK-Cp-Z7h" secondAttribute="bottom" constant="50" id="QDf-0Y-g7P"/>
-                                    <constraint firstAttribute="trailing" secondItem="5eK-Cp-Z7h" secondAttribute="trailing" constant="15" id="Zpn-C3-W0y"/>
-                                    <constraint firstAttribute="trailing" secondItem="ejY-Sd-zth" secondAttribute="trailing" constant="15" id="clS-4Y-01Q"/>
-                                    <constraint firstItem="tdg-g3-sip" firstAttribute="leading" secondItem="kRm-KN-Xng" secondAttribute="leading" constant="15" id="eSY-rJ-D2D"/>
-                                    <constraint firstItem="ejY-Sd-zth" firstAttribute="leading" secondItem="kRm-KN-Xng" secondAttribute="leading" constant="15" id="vLk-D4-zti"/>
-                                    <constraint firstAttribute="trailing" secondItem="tdg-g3-sip" secondAttribute="trailing" constant="15" id="ydt-dB-VyZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="5eK-Cp-Z7h" secondAttribute="trailing" constant="20" id="Zpn-C3-W0y"/>
+                                    <constraint firstAttribute="trailing" secondItem="ejY-Sd-zth" secondAttribute="trailing" constant="20" id="clS-4Y-01Q"/>
+                                    <constraint firstItem="tdg-g3-sip" firstAttribute="leading" secondItem="kRm-KN-Xng" secondAttribute="leading" constant="20" id="eSY-rJ-D2D"/>
+                                    <constraint firstItem="ejY-Sd-zth" firstAttribute="leading" secondItem="kRm-KN-Xng" secondAttribute="leading" constant="20" id="vLk-D4-zti"/>
+                                    <constraint firstAttribute="trailing" secondItem="tdg-g3-sip" secondAttribute="trailing" constant="20" id="ydt-dB-VyZ"/>
                                 </constraints>
                             </view>
                         </subviews>
