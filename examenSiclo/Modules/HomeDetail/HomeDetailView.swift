@@ -35,7 +35,6 @@ class HomeDetailView: UIViewController {
         super.viewDidLoad()
         contentDataView.isHidden = true
         presenter?.viewDidLoad()
-        
     }
     
 }
@@ -63,14 +62,15 @@ extension HomeDetailView: HomeDetailViewProtocol {
         self.classSchedule = classSchedule
         self.calendarClassCards = classSchedule.first ?? CalendarClass()
         self.calendarClassDate = classSchedule
-//        let indexPath = IndexPath(item: 0 , section: 0)
-//        DispatchQueue.main.async {
-//            self.dateSelectCollection.selectItem(at: indexPath, animated: false, scrollPosition: .centeredHorizontally)
-//        }
+        
         dateSelectCollection.reloadData()
         classesTbl.reloadData()
         contentDataView.isHidden = false
         hidenLoadingView()
+        let indexPath = IndexPath(item: 0 , section: 0)
+        DispatchQueue.main.async {
+            self.dateSelectCollection.selectItem(at: indexPath, animated: false, scrollPosition: .centeredHorizontally)
+        }
     }
     
     func showLoadingView() {

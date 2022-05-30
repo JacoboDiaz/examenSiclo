@@ -1,24 +1,28 @@
 PODS:
   - Alamofire (5.6.1)
   - lottie-ios (3.3.0)
+  - SkyFloatingLabelTextField (4.0.0)
   - SwiftyJSON (5.0.1)
 
 DEPENDENCIES:
   - Alamofire
   - lottie-ios
+  - SkyFloatingLabelTextField
   - SwiftyJSON
 
 SPEC REPOS:
   trunk:
     - Alamofire
     - lottie-ios
+    - SkyFloatingLabelTextField
     - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: 87bd8c952f9a4454320fce00d9cc3de57bcadaf5
   lottie-ios: 6ac74dcc09904798f59b18cb3075c089d76be9ae
+  SkyFloatingLabelTextField: 79ddc40e4ad59707fedbb48d605417aee48bb78a
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
 
-PODFILE CHECKSUM: 6570c9a3eca196a2a8fe4c086d5dbe734216aa0d
+PODFILE CHECKSUM: 829df890783f5bb72eb339316acc763d523eec07
 
 COCOAPODS: 1.11.3

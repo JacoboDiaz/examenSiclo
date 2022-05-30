@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import SkyFloatingLabelTextField
 
 class LoginView: UIViewController {
 
@@ -34,20 +35,41 @@ class LoginView: UIViewController {
     }
     
     private func validateForm() -> Bool {
+        
         guard let usernameTxt = textFieldUser.text, usernameTxt.trimmingCharacters(in: .whitespacesAndNewlines).count > 0 else {
+            if let floatingLabelTextField = textFieldUser as? SkyFloatingLabelTextField {
+                floatingLabelTextField.errorMessage = "Ingresa tu email"
+            }
             return false
         }
         
+        do{
+            _ = try self.textFieldUser.validatedText(validationType: .email)
+        }catch let error {
+            if let err = error as? ValidationError{
+                if err.message == "Invalid e-mail Address"{
+                    if let floatingLabelTextField = textFieldUser as? SkyFloatingLabelTextField {
+                        floatingLabelTextField.errorMessage = "Invalid e-mail Address"
+                    }
+                    return false
+                }
+            }
+        }
+        
         guard let password = textFieldPassword.text, password.trimmingCharacters(in: .whitespacesAndNewlines).count > 0 else {
+            if let floatingLabelTextField = textFieldPassword as? SkyFloatingLabelTextField {
+                floatingLabelTextField.errorMessage = "Ingresa tu contraseña"
+            }
             return false
         }
+        
         return true
     }
     
     func viewSettings(){
         textFields = [textFieldUser, textFieldPassword]
-        textFieldUser.setStyleLogin()
-        textFieldPassword.setStyleLogin()
+        textFieldUser.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
+        textFieldPassword.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
         configKeyBoard()
     }
     
@@ -71,6 +93,19 @@ extension LoginView: LoginViewProtocol {
 }
 
 extension LoginView : UITextFieldDelegate {
+    
+    @objc func textFieldDidChange(_ textfield: UITextField) {
+        if textFieldUser.text?.count ?? 0 >= 0 {
+            if let floatingLabelTextField = textFieldUser as? SkyFloatingLabelTextField {
+                floatingLabelTextField.errorMessage = ""
+            }
+        }
+        
+        if let floatingLabelTextField = textFieldPassword as? SkyFloatingLabelTextField {
+            floatingLabelTextField.errorMessage = ""
+        }
+    }
+    
     func configKeyBoard(){
         hideKeyboardWhenTappedAround()
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillchange(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)

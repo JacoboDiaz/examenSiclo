@@ -11,6 +11,9 @@ target 'examenSiclo' do
   pod 'Alamofire'
   
   pod 'lottie-ios'
+  
+  #UI
+  pod 'SkyFloatingLabelTextField'
 
   target 'examenSicloTests' do
     inherit! :search_paths

@@ -8,27 +8,29 @@
 
 import Foundation
 import UIKit
+import SkyFloatingLabelTextField
 
 class SignUpView: UIViewController {
     
     // MARK: Properties
-    @IBOutlet weak var firstNameTF: UITextField!
-    @IBOutlet weak var lastNameTF: UITextField!
-    @IBOutlet weak var emailLbl: UITextField!
-    @IBOutlet weak var birthdayTF: UITextField!
-    @IBOutlet weak var ladaLbl: UITextField!
-    @IBOutlet weak var phone: UITextField!
-    @IBOutlet weak var genderLbl: UITextField!
-    @IBOutlet weak var countryLbl: UITextField!
-    @IBOutlet weak var heightLbl: UITextField!
-    @IBOutlet weak var weight: UITextField!
-    @IBOutlet weak var passwordLbl: UITextField!
-    @IBOutlet weak var repeatPasswordLbl: UITextField!
+    @IBOutlet weak var firstNameTF: SkyFloatingLabelTextFieldWithIcon!
+    @IBOutlet weak var lastNameTF: SkyFloatingLabelTextFieldWithIcon!
+    @IBOutlet weak var emailLbl: SkyFloatingLabelTextFieldWithIcon!
+    @IBOutlet weak var birthdayTF: SkyFloatingLabelTextFieldWithIcon!
+    @IBOutlet weak var ladaLbl: SkyFloatingLabelTextFieldWithIcon!
+    @IBOutlet weak var phone: SkyFloatingLabelTextFieldWithIcon!
+    @IBOutlet weak var genderLbl: SkyFloatingLabelTextFieldWithIcon!
+    @IBOutlet weak var countryLbl: SkyFloatingLabelTextFieldWithIcon!
+    @IBOutlet weak var heightLbl: SkyFloatingLabelTextFieldWithIcon!
+    @IBOutlet weak var weight: SkyFloatingLabelTextFieldWithIcon!
+    @IBOutlet weak var passwordLbl: SkyFloatingLabelTextFieldWithIcon!
+    @IBOutlet weak var repeatPasswordLbl: SkyFloatingLabelTextFieldWithIcon!
     
     @IBOutlet weak var contentViewTF: UIView!
     @IBOutlet weak var contentViewTFHeight: NSLayoutConstraint!
     @IBOutlet weak var scrollView: UIScrollView!
     
+    var textFields: [UITextField]!
     var presenter: SignUpPresenterProtocol?
     
     // MARK: Lifecycle
@@ -36,28 +38,91 @@ class SignUpView: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         viewSettings()
+        configStyleTextFiels()
         configKeyBoard()
-        showAlert()
     }
     
     @IBAction func goToRegister(_ sender: Any) {
-        showAlert()
+        validate()
+    }
+    
+    func validate(){
+        do{
+            let firstName = try firstNameTF.validatedText(validationType: .requiredField(field: ""))
+            let lastName = try lastNameTF.validatedText(validationType: .requiredField(field: ""))
+            let email = try emailLbl.validatedText(validationType: .email)
+            let birthday = try birthdayTF.validatedText(validationType: .requiredField(field: ""))
+            let country = try countryLbl.validatedText(validationType: .requiredField(field: ""))
+            let phone = try phone.validatedText(validationType: .requiredField(field: ""))
+            let gender = try genderLbl.validatedText(validationType: .requiredField(field: ""))
+            let height = try heightLbl.validatedText(validationType: .requiredField(field: ""))
+            let weight = try weight.validatedText(validationType: .requiredField(field: ""))
+            let password = try passwordLbl.validatedText(validationType: .password)
+            let repeatPassword = try repeatPasswordLbl.validatedText(validationType: .password)
+            
+            guard password == repeatPasswordLbl.text else{
+                repeatPasswordLbl.errorMessage = "Se requiere al menos 8 caracteres"
+                return
+            }
+            
+        }catch let error{
+            let errorMessageDefault = "Campo requerido"
+            
+            if let err = error as? ValidationError{
+                
+                if err.message == "Invalid e-mail Address"{
+                    emailLbl.errorMessage = "Email no valido"
+                    return
+                }
+                
+                if err.message.contains("one numeric character") {
+                    passwordLbl.errorMessage = "Agrega al menos un carácter numérico"
+                    return
+                }else if err.message.contains("have at least 8"){
+                    passwordLbl.errorMessage = "Se requiere al menos 8 caracteres"
+                    return
+                }
+            }
+            
+            if firstNameTF.text!.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty{
+                firstNameTF.errorMessage = errorMessageDefault
+            }else if lastNameTF.text!.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty{
+                lastNameTF.errorMessage = errorMessageDefault
+            }else if emailLbl.text!.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty{
+                emailLbl.errorMessage = errorMessageDefault
+            }else if birthdayTF.text!.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty{
+                birthdayTF.errorMessage = errorMessageDefault
+            }else if countryLbl.text!.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty{
+                countryLbl.errorMessage = errorMessageDefault
+            }else if phone.text!.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty{
+                phone.errorMessage = errorMessageDefault
+            }else if genderLbl.text!.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty{
+                genderLbl.errorMessage = errorMessageDefault
+            }else if heightLbl.text!.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty{
+                heightLbl.errorMessage = errorMessageDefault
+            }else if weight.text!.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty{
+                weight.errorMessage = errorMessageDefault
+            }else if passwordLbl.text!.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty{
+                passwordLbl.errorMessage = errorMessageDefault
+            }else if repeatPasswordLbl.text!.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty{
+                repeatPasswordLbl.errorMessage = errorMessageDefault
+            }
+
+            
+        }
     }
     
     
     func viewSettings(){
-        self.firstNameTF.setStyleLogin()
-        self.lastNameTF.setStyleLogin()
-        self.emailLbl.setStyleLogin()
-        self.birthdayTF.setStyleLogin()
-        self.ladaLbl.setStyleLogin()
-        self.phone.setStyleLogin()
-        self.genderLbl.setStyleLogin()
-        self.countryLbl.setStyleLogin()
-        self.heightLbl.setStyleLogin()
-        self.weight.setStyleLogin()
-        self.passwordLbl.setStyleLogin()
-        self.repeatPasswordLbl.setStyleLogin()
+        firstNameTF.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
+        lastNameTF.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
+        emailLbl.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
+        birthdayTF.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
+        countryLbl.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
+        phone.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
+        genderLbl.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
+        heightLbl.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
+        weight.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
     }
     
     func showAlert(){
@@ -94,4 +159,19 @@ class SignUpView: UIViewController {
 
 extension SignUpView: SignUpViewProtocol {
     // TODO: implement view output methods
+}
+
+extension SignUpView: UITextFieldDelegate{
+    
+    @objc func textFieldDidChange(_ textfield: UITextField) {
+        
+        
+        if let floatingLabelTextField = textfield as? SkyFloatingLabelTextField {
+            floatingLabelTextField.errorMessage = ""
+        }
+    }
+    
+    func configStyleTextFiels(){
+        ladaLbl.iconImage = UIImage(imageLiteralResourceName: "icons/flags/mx_icon")
+    }
 }

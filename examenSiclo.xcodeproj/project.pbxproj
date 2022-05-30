@@ -46,6 +46,8 @@
 		BD96E73F28384EE9004B32EB /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD96E73E28384EE9004B32EB /* SignUp.storyboard */; };
 		FA15F5892838CADE0019B95F /* CatalogAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA15F5882838CADE0019B95F /* CatalogAPIError.swift */; };
 		FA15F58B2838CD950019B95F /* UserLoginEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA15F58A2838CD950019B95F /* UserLoginEntity.swift */; };
+		FA6211072841487F00D76E20 /* UITextField+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6211062841487F00D76E20 /* UITextField+Ext.swift */; };
+		FA6211092841495600D76E20 /* Validators.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6211082841495600D76E20 /* Validators.swift */; };
 		FA66A47A283C39AB00A535EF /* CardClass.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA66A479283C39AB00A535EF /* CardClass.xib */; };
 		FA66A48A283C4C8B00A535EF /* CardClassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA66A489283C4C8B00A535EF /* CardClassView.swift */; };
 		FA8BA805283C9C1500D1B893 /* CardClassSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8BA804283C9C1500D1B893 /* CardClassSchedule.swift */; };
@@ -130,6 +132,8 @@
 		EFB444BE8DE96485B906073F /* Pods-examenSiclo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-examenSiclo.release.xcconfig"; path = "Target Support Files/Pods-examenSiclo/Pods-examenSiclo.release.xcconfig"; sourceTree = "<group>"; };
 		FA15F5882838CADE0019B95F /* CatalogAPIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogAPIError.swift; sourceTree = "<group>"; };
 		FA15F58A2838CD950019B95F /* UserLoginEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLoginEntity.swift; sourceTree = "<group>"; };
+		FA6211062841487F00D76E20 /* UITextField+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Ext.swift"; sourceTree = "<group>"; };
+		FA6211082841495600D76E20 /* Validators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validators.swift; sourceTree = "<group>"; };
 		FA66A479283C39AB00A535EF /* CardClass.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardClass.xib; sourceTree = "<group>"; };
 		FA66A489283C4C8B00A535EF /* CardClassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardClassView.swift; sourceTree = "<group>"; };
 		FA8BA804283C9C1500D1B893 /* CardClassSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardClassSchedule.swift; sourceTree = "<group>"; };
@@ -224,6 +228,8 @@
 			isa = PBXGroup;
 			children = (
 				BD0F4BDD2836EB040092172B /* Support Files */,
+				FA6211052841485300D76E20 /* Extensions */,
+				BD96E7182838348C004B32EB /* Utilities */,
 				BD0F4BDC2836EAF20092172B /* Modules */,
 				BD0F4B992836C3260092172B /* AppDelegate.swift */,
 				BD0F4B9D2836C3260092172B /* ViewController.swift */,
@@ -282,7 +288,6 @@
 		BD0F4BDD2836EB040092172B /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				BD96E7182838348C004B32EB /* Utilities */,
 				BD0F4BA52836C32A0092172B /* Assets.xcassets */,
 			);
 			path = "Support Files";
@@ -291,20 +296,12 @@
 		BD96E7182838348C004B32EB /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				BD96E7192838349C004B32EB /* Extensions */,
 				BD96E71C2838351F004B32EB /* Enums.swift */,
 				FAABFDB4283B132E0007F118 /* LoadingView.swift */,
 				FAABFDB9283B38230007F118 /* waitingloading.json */,
+				FA6211082841495600D76E20 /* Validators.swift */,
 			);
 			path = Utilities;
-			sourceTree = "<group>";
-		};
-		BD96E7192838349C004B32EB /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				BD96E71A283834B7004B32EB /* Extensions.swift */,
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 		BD96E71E283843E4004B32EB /* Login */ = {
@@ -345,6 +342,15 @@
 				FA15F58A2838CD950019B95F /* UserLoginEntity.swift */,
 			);
 			path = EntitiesLogin;
+			sourceTree = "<group>";
+		};
+		FA6211052841485300D76E20 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BD96E71A283834B7004B32EB /* Extensions.swift */,
+				FA6211062841487F00D76E20 /* UITextField+Ext.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		FA66A476283C384200A535EF /* CardClass */ = {
@@ -645,6 +651,7 @@
 				FA8BA805283C9C1500D1B893 /* CardClassSchedule.swift in Sources */,
 				FAABFDAC283AE7100007F118 /* HomeDetailLocalDataManager.swift in Sources */,
 				FAABFDAB283AE7100007F118 /* HomeDetailPresenter.swift in Sources */,
+				FA6211072841487F00D76E20 /* UITextField+Ext.swift in Sources */,
 				FAABFDAF283AE7100007F118 /* HomeDetailView.swift in Sources */,
 				FACEABF2283DCE37004D5A8F /* DateSelectionCollectionViewCell.swift in Sources */,
 				BD96E73B28384ECD004B32EB /* SignUpView.swift in Sources */,
@@ -668,6 +675,7 @@
 				FAABFDB1283AE7100007F118 /* HomeDetailWireFrame.swift in Sources */,
 				BD96E71D2838351F004B32EB /* Enums.swift in Sources */,
 				BD96E73A28384ECD004B32EB /* SignUpInteractor.swift in Sources */,
+				FA6211092841495600D76E20 /* Validators.swift in Sources */,
 				BD0F4BD62836C8430092172B /* MainInteractor.swift in Sources */,
 				BD96E73D28384ECD004B32EB /* SignUpWireFrame.swift in Sources */,
 				BD96E72728384403004B32EB /* LoginLocalDataManager.swift in Sources */,
