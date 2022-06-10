@@ -12,11 +12,15 @@ import UIKit
 protocol SignUpViewProtocol: AnyObject {
     // PRESENTER -> VIEW
     var presenter: SignUpPresenterProtocol? { get set }
+    func showLoadingView()
+    func hidenLoadingView()
 }
 
 protocol SignUpWireFrameProtocol: AnyObject {
     // PRESENTER -> WIREFRAME
     static func createSignUpModule() -> UIViewController
+    func presentViewHomeDetail(view: SignUpViewProtocol)
+    func presentSignUp(view: SignUpViewProtocol)
 }
 
 protocol SignUpPresenterProtocol: AnyObject {
@@ -26,10 +30,15 @@ protocol SignUpPresenterProtocol: AnyObject {
     var wireFrame: SignUpWireFrameProtocol? { get set }
     
     func viewDidLoad()
+    func userSignUp(userSignUp : UserSignUpEntity)
+    
+    func showSelectItem()
+    
 }
 
 protocol SignUpInteractorOutputProtocol: AnyObject {
 // INTERACTOR -> PRESENTER
+    func interactorCallBackValidSignUp(isValid : Bool)
 }
 
 protocol SignUpInteractorInputProtocol: AnyObject {
@@ -37,6 +46,8 @@ protocol SignUpInteractorInputProtocol: AnyObject {
     var presenter: SignUpInteractorOutputProtocol? { get set }
     var localDatamanager: SignUpLocalDataManagerInputProtocol? { get set }
     var remoteDatamanager: SignUpRemoteDataManagerInputProtocol? { get set }
+    
+    func interactorUserSignUp(userSignUp: UserSignUpEntity)
 }
 
 protocol SignUpDataManagerInputProtocol: AnyObject {
@@ -46,10 +57,14 @@ protocol SignUpDataManagerInputProtocol: AnyObject {
 protocol SignUpRemoteDataManagerInputProtocol: AnyObject {
     // INTERACTOR -> REMOTEDATAMANAGER
     var remoteRequestHandler: SignUpRemoteDataManagerOutputProtocol? { get set }
+    
+    func externalGetDataUserSignUp(userSignUp: UserSignUpEntity)
 }
 
 protocol SignUpRemoteDataManagerOutputProtocol: AnyObject {
     // REMOTEDATAMANAGER -> INTERACTOR
+    
+    func remoteDataManagerCallBackValidSignUp(isValid: Bool)
 }
 
 protocol SignUpLocalDataManagerInputProtocol: AnyObject {

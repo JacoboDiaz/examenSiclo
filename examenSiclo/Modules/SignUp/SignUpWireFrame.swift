@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 class SignUpWireFrame: SignUpWireFrameProtocol {
-
+    
     class func createSignUpModule() -> UIViewController {
         let viewController = mainStoryboard.instantiateViewController(withIdentifier: "SignUpView")
         if let view = viewController as? SignUpView {
@@ -37,5 +37,26 @@ class SignUpWireFrame: SignUpWireFrameProtocol {
     static var mainStoryboard: UIStoryboard {
         return UIStoryboard(name: "SignUp", bundle: Bundle.main)
     }
+    
+    func presentViewHomeDetail(view: SignUpViewProtocol) {
+        guard let window = UIApplication.shared.keyWindow else {
+            return
+        }
+        guard let rootViewController = window.rootViewController else {
+            return
+        }
+        
+        let mainNC = HomeDetailWireFrame.createHomeDetailModule()
+        mainNC.view.frame = rootViewController.view.frame
+        mainNC.view.layoutIfNeeded()
+        UIView.transition(with: window, duration: 0.5, options: .transitionCrossDissolve, animations: {
+            window.rootViewController = mainNC
+        })
+    }
+    
+    func presentSignUp(view: SignUpViewProtocol) {
+        print("vamos a view select item")
+    }
+    
     
 }

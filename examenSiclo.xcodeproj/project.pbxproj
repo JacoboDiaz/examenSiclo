@@ -26,7 +26,6 @@
 		BD0F4BD72836C8430092172B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0F4BD02836C8430092172B /* MainView.swift */; };
 		BD0F4BD82836C8430092172B /* MainRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0F4BD12836C8430092172B /* MainRemoteDataManager.swift */; };
 		BD0F4BD92836C8430092172B /* MainWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0F4BD22836C8430092172B /* MainWireFrame.swift */; };
-		BD96E71B283834B7004B32EB /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD96E71A283834B7004B32EB /* Extensions.swift */; };
 		BD96E71D2838351F004B32EB /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD96E71C2838351F004B32EB /* Enums.swift */; };
 		BD96E72628384403004B32EB /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD96E71F28384403004B32EB /* LoginPresenter.swift */; };
 		BD96E72728384403004B32EB /* LoginLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD96E72028384403004B32EB /* LoginLocalDataManager.swift */; };
@@ -51,6 +50,10 @@
 		FA66A47A283C39AB00A535EF /* CardClass.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA66A479283C39AB00A535EF /* CardClass.xib */; };
 		FA66A48A283C4C8B00A535EF /* CardClassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA66A489283C4C8B00A535EF /* CardClassView.swift */; };
 		FA8BA805283C9C1500D1B893 /* CardClassSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8BA804283C9C1500D1B893 /* CardClassSchedule.swift */; };
+		FAA79BBA28510F88009639C9 /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA79BB928510F88009639C9 /* UIViewController+Ext.swift */; };
+		FAA79BBC28510FC9009639C9 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA79BBB28510FC9009639C9 /* UIView+Ext.swift */; };
+		FAA79BBE28512AFC009639C9 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA79BBD28512AFC009639C9 /* String+Ext.swift */; };
+		FAA79BC1285131F0009639C9 /* UserSignUpEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA79BC0285131F0009639C9 /* UserSignUpEntity.swift */; };
 		FAABFDAB283AE7100007F118 /* HomeDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABFDA4283AE7100007F118 /* HomeDetailPresenter.swift */; };
 		FAABFDAC283AE7100007F118 /* HomeDetailLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABFDA5283AE7100007F118 /* HomeDetailLocalDataManager.swift */; };
 		FAABFDAD283AE7100007F118 /* HomeDetailProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABFDA6283AE7100007F118 /* HomeDetailProtocols.swift */; };
@@ -110,7 +113,6 @@
 		BD0F4BD02836C8430092172B /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		BD0F4BD12836C8430092172B /* MainRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRemoteDataManager.swift; sourceTree = "<group>"; };
 		BD0F4BD22836C8430092172B /* MainWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWireFrame.swift; sourceTree = "<group>"; };
-		BD96E71A283834B7004B32EB /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		BD96E71C2838351F004B32EB /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		BD96E71F28384403004B32EB /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		BD96E72028384403004B32EB /* LoginLocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginLocalDataManager.swift; sourceTree = "<group>"; };
@@ -137,6 +139,10 @@
 		FA66A479283C39AB00A535EF /* CardClass.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardClass.xib; sourceTree = "<group>"; };
 		FA66A489283C4C8B00A535EF /* CardClassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardClassView.swift; sourceTree = "<group>"; };
 		FA8BA804283C9C1500D1B893 /* CardClassSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardClassSchedule.swift; sourceTree = "<group>"; };
+		FAA79BB928510F88009639C9 /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
+		FAA79BBB28510FC9009639C9 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		FAA79BBD28512AFC009639C9 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		FAA79BC0285131F0009639C9 /* UserSignUpEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSignUpEntity.swift; sourceTree = "<group>"; };
 		FAABFDA4283AE7100007F118 /* HomeDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailPresenter.swift; sourceTree = "<group>"; };
 		FAABFDA5283AE7100007F118 /* HomeDetailLocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailLocalDataManager.swift; sourceTree = "<group>"; };
 		FAABFDA6283AE7100007F118 /* HomeDetailProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailProtocols.swift; sourceTree = "<group>"; };
@@ -323,6 +329,7 @@
 		BD96E72F28384EB8004B32EB /* SignUp */ = {
 			isa = PBXGroup;
 			children = (
+				FAA79BBF28513190009639C9 /* EntitiesSignUp */,
 				BD96E73E28384EE9004B32EB /* SignUp.storyboard */,
 				BD96E73428384ECD004B32EB /* SignUpView.swift */,
 				BD96E73028384ECD004B32EB /* SignUpPresenter.swift */,
@@ -347,8 +354,10 @@
 		FA6211052841485300D76E20 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				BD96E71A283834B7004B32EB /* Extensions.swift */,
 				FA6211062841487F00D76E20 /* UITextField+Ext.swift */,
+				FAA79BB928510F88009639C9 /* UIViewController+Ext.swift */,
+				FAA79BBB28510FC9009639C9 /* UIView+Ext.swift */,
+				FAA79BBD28512AFC009639C9 /* String+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -376,6 +385,14 @@
 				FABC90B6283B53C900C6D945 /* EntitiesHomeDetail */,
 			);
 			path = HomeDetail;
+			sourceTree = "<group>";
+		};
+		FAA79BBF28513190009639C9 /* EntitiesSignUp */ = {
+			isa = PBXGroup;
+			children = (
+				FAA79BC0285131F0009639C9 /* UserSignUpEntity.swift */,
+			);
+			path = EntitiesSignUp;
 			sourceTree = "<group>";
 		};
 		FABC90B6283B53C900C6D945 /* EntitiesHomeDetail */ = {
@@ -642,6 +659,8 @@
 			files = (
 				BD0F4BD32836C8430092172B /* MainPresenter.swift in Sources */,
 				FAABFDAD283AE7100007F118 /* HomeDetailProtocols.swift in Sources */,
+				FAA79BBA28510F88009639C9 /* UIViewController+Ext.swift in Sources */,
+				FAA79BC1285131F0009639C9 /* UserSignUpEntity.swift in Sources */,
 				BD96E73928384ECD004B32EB /* SignUpProtocols.swift in Sources */,
 				FAABFDB0283AE7100007F118 /* HomeDetailRemoteDataManager.swift in Sources */,
 				FA15F5892838CADE0019B95F /* CatalogAPIError.swift in Sources */,
@@ -671,10 +690,11 @@
 				BD96E72A28384403004B32EB /* LoginView.swift in Sources */,
 				BD96E72628384403004B32EB /* LoginPresenter.swift in Sources */,
 				BD0F4BD82836C8430092172B /* MainRemoteDataManager.swift in Sources */,
-				BD96E71B283834B7004B32EB /* Extensions.swift in Sources */,
 				FAABFDB1283AE7100007F118 /* HomeDetailWireFrame.swift in Sources */,
 				BD96E71D2838351F004B32EB /* Enums.swift in Sources */,
 				BD96E73A28384ECD004B32EB /* SignUpInteractor.swift in Sources */,
+				FAA79BBC28510FC9009639C9 /* UIView+Ext.swift in Sources */,
+				FAA79BBE28512AFC009639C9 /* String+Ext.swift in Sources */,
 				FA6211092841495600D76E20 /* Validators.swift in Sources */,
 				BD0F4BD62836C8430092172B /* MainInteractor.swift in Sources */,
 				BD96E73D28384ECD004B32EB /* SignUpWireFrame.swift in Sources */,
